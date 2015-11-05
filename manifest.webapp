@@ -1,0 +1,14 @@
+{
+	"name":"Surprise",
+	"description":"Ingresa El nombre de la persona que te gusta y sabrás algo como sorpresa",
+	"launch_path":"/index.html",
+	"icons": {
+	"128": "/icons/ic_favorite_black_48dp.png"
+	},
+	"developer":{
+	"name":"Manuel Jiménez",
+	"url":"http://MartechJimenez.com"
+	},
+	"permissions":{
+	}
+}

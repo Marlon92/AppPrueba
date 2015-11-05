@@ -1,0 +1,500 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: #17B7FF;
+	margin:0;
+	padding:0;
+}
+
+.loginBlock header fieldset {
+		display: block;
+	width: 300px;
+	border: 0px solid #eaeaea;
+	background-color: orange;
+	/*text-align: left;*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius:5px;
+	padding:1em;
+	text-align: center;
+	margin:0 0 0 auto ;
+
+}
+
+.error{
+    background-color: #BC1010;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+}
+.error:before{ /* Este es un truco para crear una flechita */
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #BC1010;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
+
+a{
+	text-decoration:none;
+}
+
+.align-center{text-align: center;}
+.margin-top{margin-top:1em;}
+.margin-bottom{margin-bottom:1em;}
+.margin-left{margin-left:1em;}
+.margin-right{margin-right:1em;}
+
+
+
+header{
+	background: #009688;
+	padding: 0 3em 3em 0;
+	box-shadow: 0 4px 5px 2px #444 !important;
+}
+/*
+	¿así? 
+	Los valores de margin, padding, border-radius, etc., los podes pasar de 3 maneras
+	1) padding: 3em;
+		Si lo pones así estás diciendo que todos los lados del contenedor tendrá un padding o relleno de 3em
+	2) padding: 1em 2em;
+	 	Si lo haces de esta manera estás diciendo que la parte superior e inferior del contenedor tendrá 1em de padding, y la parte
+	 	izquierda y derecha tendrá 2em.  Es decir, si pasas dos valores nada mas el navegador lo interpretara  el primer valor pasado será
+	 	para arriba y abajo, y el segundo será a los lados.
+	3.) padding: 0 3em 3em 0;
+		Si lo haces de esta manea estás asignando qué valores queres que tenga cada una de los cuatro lados del contenedor, y como un contenedor
+		es al final un bloque cuadrado (puede tener border-radius que lo hará circular dependiendo cómo lo hagamos, pero al final los padding's y los margin's los toma como si el contenedor fuera un bloque cuadrado)
+		con ese padding hiciste q la imagen se hiciera a la esquina va?
+		Sí, pero no es ninguna técnica "avanzada" jejeje... lo que pasa es que vos le tenías relleno o padding a todo el bloque, y al tener ese relleno
+		la imagen no tenía como poderse adaptar o poner al lado superior izquierdo, entonces solamente le quité eso para que se pudiera ajustar a ese lado.
+		Si podéis haber apreciado te daráis cuenta que no toque la imagen en ningun momento, solo fue el header porque ese era el que estaba ocasionando el problema.
+		Claro, se pudo haber hecho de otra manera como darle a la imagen position: absolute; y luego manejarla con los valores top, left, right, bottom para ajustarla
+		pero para este caso solo fue necesario eso.
+
+*/
+
+header h1{
+	color:#FFF;
+	margin:-4em 0 0 13em;
+	padding:0;
+	text-align: center;
+}
+header div{
+	border-radius: 2px;
+}
+header h1, header div {
+	display: inline-block;
+	vertical-align: middle;
+}
+header div img{
+border-radius: 1em;
+}
+
+/*SIMON CUAL QUIER OTRA COSA TE HCINGO  OK*/
+header nav{
+	text-align: center;
+	margin-top: -16em;
+}
+	
+	header nav ul{
+
+		text-align:center;
+		padding:0;
+		list-style:none;
+	}
+
+	header nav ul li{
+		display: inline-block;
+		margin:0 0 0.2em 0;
+	}
+		header nav ul li a{
+		border-radius: 16px;
+		background:#1BBE9E;
+		color:#FFF;
+		padding:1em;
+		
+	}
+
+		section article{
+			
+		}
+
+
+			section article form{
+				background:#48B4B7;
+				margin: 2em auto;
+				width:50%;
+				padding:3em;
+				border-radius:10%;
+			}
+
+section article h1{
+			margin:0 0 1.4em 0;
+			text-align: center;			
+		}
+			section article form fieldset{
+				
+				border:0;	
+			}
+
+				section article form fieldset label{
+				border:0;
+					display:inline-block;
+						text-align:left;
+					width:18%;
+
+				}
+
+
+
+				section article form fieldset input{
+					border-radius:8px;
+					border:0;
+					padding:0.3em;
+					width:45%;
+				}
+				section article form fieldset select{
+					border-radius:8px;
+					padding:0.3em ;
+					display:inline-block;
+					width:47%;
+				
+				}
+
+				section article form .button_login{
+					background:#40006E;
+					color:#FFFEBD;
+					padding:1em;
+					border-radius:10px;	
+				}
+					section article form .entrar{
+						border: 2px solid;
+					background:#40006E;
+					color:#FFFEBD;
+					width:18%;
+					border-radius: 10px;
+				}
+
+					section article form .registrar{
+					border: 2px solid;
+					background:#40006E;
+					color:#FFFEBD;
+					width:18%;
+					border-radius:10px;
+				}
+
+	
+
+	@font-face { 
+  font-family: Droid Sans; 
+    src: url('../fonts/DroidSans-webfont.eot'); 
+    src: local("Droid Sans"), url('../fonts/DroidSans-webfont.woff'); 
+} 
+
+@font-face { 
+  font-family: News Cycle; 
+    src: url('../fonts/NewsCycle-Regular.eot'); 
+    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
+} 
+
+body {
+	color: #FFF;
+    font: normal 100% 'Droid Sans', arial, sans-serif;
+	line-height: 2em;
+	background: #1d1d1d;
+}
+
+p { 
+  padding: 0 0 16px 0;
+  line-height: 1.7em;
+}
+
+img { 
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  color: #33D0FD;
+  letter-spacing: 0em;
+  padding: 0 0 0.5em 0;
+}
+
+h1, h2, h3 { 
+  font: bold 140% 'News Cycle', arial;
+  margin: 0 0 1em 0;
+  padding: 0 0 0.5em 0;
+}
+
+h2 { 
+  font-size: 160%;
+}
+
+h3 { 
+  font-size: 140%;
+  padding: 0.5em 0 0 0;
+}
+
+h4, h5, h6 { 
+  padding: 0 0 0.5em 0;
+  font: normal 120% 'Droid Sans', arial, sans-serif;
+}
+
+a, a:hover { 
+  outline: none;
+  text-decoration: none;
+  color: #FFF;
+}
+
+a:hover { 
+  text-decoration: underline;
+}
+
+blockquote { 
+  margin: 2em 0; 
+  padding: 1em 2em 0 2em;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+}
+
+ul { 
+  margin: 0.1em 0 1em 2em;
+	display:inline-block;
+
+}
+
+ul li { 
+  list-style-type: none;
+  margin: 0 0 0.25em 0; 
+  padding: 0 0 0.25em 0.5em;
+  line-height: 1.5em;
+	display:inline-block;
+}
+
+ol { 
+  margin: 0.1em 0 2em 2em;
+}
+
+ol li { 
+  margin: 0 0 0.5em 0; 
+}
+
+.left { 
+  float: left;
+  width: auto;
+  margin-right: 1em;
+}
+
+.right { 
+  float: right; 
+  width: auto;
+  margin-left: 1em;
+}
+
+.center { 
+  display: block;
+  text-align: center;
+  margin: 2em auto;
+}
+
+#header_container {
+    background: #1D1D1D url(../images/pattern.png) repeat;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5)  3px 3px 5px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
+	box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
+}
+
+.transparent {
+    background: transparent url(../images/transparent.png) repeat;
+	padding: 0.5em 0.5em 1.5em 1em;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border: 7px 7px 7px 7px; 
+}
+
+#header h1 a { 
+  font: normal 180% 'News Cycle', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;
+  color: #FFF;
+  text-decoration: none;
+}
+
+#header h2 { 
+  font: normal 100% 'News Cycle', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin-top: -1em;
+  color: #FFF;
+}
+
+#header h1 a .header_colour { 
+  color: #33D0FD;
+}
+
+#header a:hover .header_colour { 
+  color: #FFF;
+}
+
+.button {
+	border-radius: 0.5em;
+	box-shadow: inset 0 0 0 2px rgba(255,255,255,0.5);
+	color: #369ab8;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+}
+
+
+#main-nav ul { 
+    font: normal 100% 'News Cycle', arial;
+	float: right;
+	list-style: none;
+	margin-top: 5.2em;
+	padding-bottom: 0.5em; 
+	display:inline-block;
+	display:inline-block;
+
+}
+
+#main-nav ul li { 
+	display: inline-block; 
+	margin: 0; 
+	padding: 0.35em 0em 0.35em 0em; 
+	border-radius: 0.5em; 
+	display:inline-block;
+
+}
+
+#main-nav ul li a { 
+	color: #fff; 
+	padding: 0.5em 1em 0.75em 1em;
+}
+
+#main-nav ul li a.active, #main-nav ul li a:hover { 
+	color: #fff; 
+	text-decoration: underline;
+    background: #2BB1E0;	
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border: 7px 7px 7px 7px; 
+}
+
+.row{
+	margin-left: -100px;
+}
+
+.4u2{
+		margin:1em auto;
+	text-align: center;
+}
+#sidebar {
+    margin-bottom: 1em;
+	text-shadow: 1px 1px #323232;
+	background: #2D2D2D;
+	width:114%;
+	text-align: center;
+	padding: 0.3em 1em 3em 0.3em;
+	color: #FFF;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border: 7px 7px 7px 7px; 
+	-moz-box-shadow: rgba(0, 0, 0, 0.5)  0px 3px 5px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;	
+}
+
+
+
+#sidebarquienes2 {
+    margin-bottom: 2em;
+    text-shadow: 1px 1px #323232;
+	background: #2D2D2D;
+	width: 33.333%;
+	margin:auto;
+	padding: 0.3em 3em 3em 1.5em;
+	color: #FFF;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border: 7px 7px 7px 7px; 
+	-moz-box-shadow: rgba(0, 0, 0, 0.5)  0px 3px 5px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;	
+}
+
+
+
+#sidebarquienes {
+    margin-bottom: 2em;
+	text-shadow: 1px 1px #323232;
+	background: #2D2D2D;
+	margin:4em auto;
+	width:33.333%;
+	padding: 0.3em 3em 3em 1.5em;
+	color: #FFF;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border: 7px 7px 7px 7px; 
+	-moz-box-shadow: rgba(0, 0, 0, 0.5)  0px 3px 5px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;	
+}
+
+
+
+
+footer { 
+  font: 100% 'Droid Sans', arial, sans-serif;
+  text-align: center; 
+  margin: 0;
+}
+
+footer p { 
+  line-height: 1.7em;
+}
+
+footer a { 
+  text-decoration: none;
+}
+
+footer a:hover { 
+  text-decoration: underline;
+}
+
+/* A single menu */
+
+nav select {
+  display: none;
+}
+ 
+@media (max-width: 480px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block;}
+}  
+
+
+
+table { 
+  margin: 1em 0 3em 0;
+}
+
+table tr th, table tr td { 
+  background: #323232;
+  color: #FFF;
+  padding: 0.75em 0.5em;
+  text-align: left;
+}
+  
+table tr td { 
+  background: #FFF;
+  color: #47433F;
+  border-top: 1px solid #EEE;
+}
+/*aqe*/
+
